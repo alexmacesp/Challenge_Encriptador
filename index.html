@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="body">
+    <header>
+        <img class="logo" src="./assets/Logo.png">
+    </header>
+
+    <main class="cuerpo">
+        <section class="cuerpo__contenido">
+            <div>
+                <textarea onchange="cambio();" class="textbox" type="text" id="myInput" placeholder="Ingresa el texto aqui..."></textarea>
+            </div>
+            <div class="cuerpo__contenido__inferior">
+                <div class="cuerpo__advertencia">
+                    <img class="advertencia__imagen" src="./assets/Vector.png">
+                    <p class="cuerpo__advertencia__texto" >Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptar();" class="boton_encriptar">Encriptar</button>
+                    <button onclick="desencriptar();" class="boton_desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section class="cuerpo__resultado">
+                <p class="displaybox" id="displayText"></p>
+                <div id="campo__resultado">
+                    <img class="imagen__resultado" src="./assets/Muñeco.png">
+                    <div class="cuerpo__resultado_textos">
+                    <p class="cuerpo__resultado__textos_1">Ningun mensaje fue <br>encontrado</p>
+                    <p class="cuerpo__resultado__textos_2">Ingresa el texto que deseas encriptar <br>o desencriptar</p>
+                    </div>
+                </div>
+        </section>
+        
+        
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>
